@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rent | FindHome</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="css/rent.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+    <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="logo">
+        FindHome
+    </a>
+
+    <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="properties.html">Properties</a>
+        <a href="buy.html">Buy</a>
+        <a href="rent.html" class="active">Rent</a>
+        <a href="agent.html">Agent</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="properties.html" class="nav-btn">View Properties</a>
+    </div>
+</nav>
+
+<!-- ================= MAIN CONTENT ================= -->
+<section class="rent-section">
+
+    <h1>Rent a home</h1>
+
+    <!-- Search -->
+    <div class="search-box">
+        <i class="fa fa-search"></i>
+        <input type="text" id="searchInput" placeholder="Search by city, neighborhood, address, or ZIP code">
+    </div>
+
+    <!-- Filters -->
+    <div class="filter-row">
+        <select id="typeFilter">
+            <option value="all">Rent</option>
+            <option value="apartment">Apartment</option>
+            <option value="loft">Loft</option>
+            <option value="house">House</option>
+            <option value="studio">Studio</option>
+            <option value="condo">Condo</option>
+            <option value="townhouse">Townhouse</option>
+        </select>
+
+        <button class="filter-btn">All filters</button>
+    </div>
+
+    <h2>Homes for rent</h2>
+
+    <!-- Property Cards -->
+    <div class="cards" id="cardContainer">
+
+        <div class="card" data-type="apartment">
+            <img src="images/image4.jpg">
+            <div class="card-body">
+                <h3>Cozy Apartment in Downtown</h3>
+                <p>2 beds · 2 baths · 1,200 sq ft</p>
+            </div>
+        </div>
+
+        <div class="card" data-type="loft">
+            <img src="images/image17.jpg">
+            <div class="card-body">
+                <h3>Modern Loft in Arts District</h3>
+                <p>1 bed · 1 bath · 800 sq ft</p>
+            </div>
+        </div>
+
+        <div class="card" data-type="house">
+            <img src="images/image18.jpg">
+            <div class="card-body">
+                <h3>Spacious House in Suburbs</h3>
+                <p>4 beds · 3 baths · 2,500 sq ft</p>
+            </div>
+        </div>
+
+        <div class="card" data-type="studio">
+            <img src="images/image19.jpg">
+            <div class="card-body">
+                <h3>Charming Studio in Historic Area</h3>
+                <p>1 bed · 1 bath · 600 sq ft</p>
+            </div>
+        </div>
+
+        <div class="card" data-type="condo">
+            <img src="images/image20.jpg">
+            <div class="card-body">
+                <h3>Luxury Condo with City Views</h3>
+                <p>2 beds · 2 baths · 1,500 sq ft</p>
+            </div>
+        </div>
+
+        <div class="card" data-type="townhouse">
+            <img src="images/image12.jpg">
+            <div class="card-body">
+                <h3>Townhouse with Garden</h3>
+                <p>3 beds · 2 baths · 1,800 sq ft</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination">
+        <span class="page-btn active">1</span>
+        <span class="page-btn">2</span>
+        <span class="page-btn">3</span>
+        <span class="page-btn">4</span>
+        <span class="page-btn">5</span>
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-links">
+            <a href="#">About Us</a>
+            <a href="#">Careers</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+
+        <div class="footer-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+
+        <p class="footer-copy">© 2023 FindHome. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="js/rent.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Property Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/propertydetails.css">
+</head>
+<body>
+
+<nav class="navbar">
+
+    <!-- Logo with Image -->
+    <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="logo">
+        FindHome
+    </a>
+
+    <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="properties.html">Properties</a>
+        <a href="buy.html" class="active">Buy</a>
+        <a href="rent.html">Rent</a>
+        <a href="agent.html">Agent</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="properties.html" class="nav-btn">View Properties</a>
+    </div>
+
+</nav>
+
+
+<div class="container">
+
+    <!-- Breadcrumb -->
+    <p class="breadcrumb">Home  /  123 Maple Street</p>
+
+    <!-- Property Image -->
+    <img src="images/image1.jpg"
+         class="property-image">
+
+    <!-- Price & Address -->
+    <h2 class="price">$850,000</h2>
+    <p class="address">123 Maple Street, Anytown, CA 91234</p>
+
+    <!-- Buttons -->
+    <div class="button-group">
+<button class="primary-btn" onclick="location.href='contact.html'">
+    Contact Agent
+</button>        <button class="secondary-btn">Book Visit</button>
+    </div>
+
+    <!-- Overview -->
+    <h3 class="section-title">Property Overview</h3>
+
+    <div class="overview-grid">
+        <div>
+            <span class="label">Property Type</span>
+            <p>Single Family Home</p>
+        </div>
+        <div>
+            <span class="label">Bedrooms</span>
+            <p>4</p>
+        </div>
+
+        <div>
+            <span class="label">Bathrooms</span>
+            <p>3</p>
+        </div>
+        <div>
+            <span class="label">Size</span>
+            <p>2,500 sq ft</p>
+        </div>
+
+        <div>
+            <span class="label">Year Built</span>
+            <p>2015</p>
+        </div>
+        <div>
+            <span class="label">Parking</span>
+            <p>2-Car Garage</p>
+        </div>
+    </div>
+
+    <!-- Amenities -->
+    <h3 class="section-title">Amenities</h3>
+
+    <ul class="amenities">
+        <li>Central Air Conditioning</li>
+        <li>Fireplace</li>
+        <li>Hardwood Floors</li>
+        <li>Stainless Steel Appliances</li>
+        <li>Walk-in Closet</li>
+        <li>Backyard</li>
+    </ul>
+
+    <!-- Description -->
+    <h3 class="section-title">Description</h3>
+
+    <p class="description">
+        Welcome to this stunning 4-bedroom, 3-bathroom single-family home located in the desirable Anytown neighborhood. Built in 2015, this property boasts 2,500 sq ft of living space, featuring a modern kitchen with stainless steel appliances, hardwood floors throughout, and a cozy fireplace in the living room. The master suite includes a walk-in closet and en-suite bathroom. Enjoy the convenience of a 2-car garage and a spacious backyard perfect for entertaining. This home is equipped with central air conditioning for year-round comfort. Don’t miss the opportunity to make this your dream home!
+    </p>
+
+    <!-- Location -->
+    <h3 class="section-title">Location</h3>
+
+    <div class="location-map">
+        <iframe 
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-122.10%2C36.95%2C-121.95%2C37.05&layer=mapnik"
+            frameborder="0">
+        </iframe>
+    </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- Top Links -->
+        <div class="footer-links">
+            <a href="#">About Us</a>
+            <a href="#">Careers</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="footer-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+
+        <!-- Copyright -->
+        <p class="footer-copy">© 2023 FindHome. All rights reserved.</p>
+
+    </div>
+</footer>
+
+</body>
+</html>
