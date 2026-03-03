@@ -1,0 +1,312 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Public Sans', sans-serif;
+}
+
+body{
+    background:white;
+    padding-top:80px;
+}
+
+/* Navbar */
+.navbar{
+    width:100%;
+    background:#E5E8EB;
+    padding:16px 60px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+}
+
+/* Logo with image */
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:600;
+    color:#111;
+}
+
+.logo img{
+    width:62px;   /* Adjust size if needed */
+    height:62px;
+}
+
+
+/* Nav Links */
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:32px;
+}
+
+/* Normal Links */
+.nav-links a{
+    text-decoration:none;
+    color:#222;
+    font-size:15px;
+    font-weight:500;
+    transition:0.3s ease;
+}
+
+/* Hover (except button) */
+.nav-links a:not(.nav-btn):hover{
+    color:#024CF8;
+}
+
+/* ACTIVE LINK (stays blue always) */
+.nav-links a.active{
+    color:#024CF8;
+    font-weight:600;
+}
+
+/* Prevent hover changing active */
+.nav-links a.active:hover{
+    color:#024CF8;
+}
+
+/* Button */
+.nav-btn{
+    background:#024CF8;
+    color:#fff;
+    padding:10px 18px;
+    border-radius:8px;
+    font-size:14px;
+    font-weight:500;
+    text-decoration:none;
+}
+
+/* No hover effect */
+.nav-btn:hover{
+    background:#024CF8;
+    color:#fff;
+}
+
+
+
+.agent-section{
+    max-width:1200px;
+    margin:60px auto;
+    padding:0 40px;
+}
+
+.agent-section h1{
+    font-size:32px;
+    font-weight:600;
+    margin-bottom:25px;
+}
+
+.agent-section h2{
+    font-size:20px;
+    font-weight:600;
+    margin:30px 0 15px;
+}
+
+/* Search */
+.search-box{
+    display:flex;
+    align-items:center;
+    background:#f3f4f6;
+    padding:14px 18px;
+    border-radius:8px;
+    margin-bottom:25px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.search-box i{
+    margin-right:10px;
+    color:#777;
+}
+
+.search-box input{
+    border:none;
+    outline:none;
+    background:transparent;
+    width:100%;
+    font-size:14px;
+}
+
+/* Input fields */
+.input-box{
+    width:350px;
+    padding:14px;
+    border-radius:8px;
+    border:none;
+    background:#f3f4f6;
+    margin-bottom:20px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+    font-size:14px;
+}
+
+/* Featured agents */
+.featured-title{
+    margin-top:40px;
+}
+
+.agents{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+.agent-card{
+    text-align:center;
+    width:180px;
+}
+
+.agent-card img{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:12px;
+}
+
+.agent-card h3{
+    font-size:16px;
+    margin-bottom:6px;
+}
+
+.agent-card p{
+    font-size:13px;
+    color:#666;
+}
+
+
+
+.footer{
+    background:#E5E8EB;   /* exact soft blue/grey tone */
+    padding:40px 0;
+    text-align:center;
+}
+
+.footer-container{
+    max-width:900px;
+    margin:0 auto;
+}
+
+.footer-links{
+    display:flex;
+    justify-content:center;
+    gap:180px;
+    margin-bottom:25px;
+}
+
+.footer-links a{
+    text-decoration:none;
+    color:#111;
+    font-size:15px;
+    font-weight:500;
+}
+
+.footer-icons{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin-bottom:20px;
+}
+
+.footer-icons a{
+    color:#111;
+    font-size:18px;
+}
+
+.footer-copy{
+    font-size:14px;
+    color:#222;
+}
+
+
+/* ==========================================
+   RESPONSIVE - DESKTOP / TABLET / MOBILE
+========================================== */
+
+/* -------- Large Desktop (1200px and up) -------- */
+@media (min-width:1200px){
+    /* Your default CSS already works for desktop */
+}
+
+
+/* -------- Tablet (768px - 1024px) -------- */
+@media (max-width:1024px){
+
+    .navbar{
+        padding:16px 30px;
+    }
+
+    .nav-links{
+        gap:20px;
+    }
+
+    .about-section{
+        padding:0 25px;
+    }
+
+    .footer-links{
+        gap:80px;
+    }
+}
+
+
+/* -------- Mobile (Below 768px) -------- */
+@media (max-width:768px){
+
+    body{
+        padding-top:70px;
+    }
+
+    .navbar{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+        padding:15px 20px;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:12px;
+        width:100%;
+    }
+
+    .logo img{
+        width:45px;
+        height:45px;
+    }
+
+    .about-section{
+        margin:40px auto;
+        padding:0 20px;
+    }
+
+    .about-section h1{
+        font-size:24px;
+    }
+
+    .about-section h2{
+        font-size:18px;
+    }
+
+    .about-section p,
+    .about-section ul li{
+        font-size:14px;
+    }
+
+    .footer-links{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .footer-icons{
+        gap:15px;
+    }
+}
